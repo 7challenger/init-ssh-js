@@ -1,0 +1,31 @@
+name: 'Initialize ssh keys'
+branding:
+  icon: 'cloud-lightning'
+  color: 'red'
+description: 'Create .ssh dir and paste keys'
+
+inputs:
+  ssh_private_key:
+    description: 'SSH private key'
+    required: true
+
+  ssh_public_key:
+    description: 'SSH public key'
+    required: true
+
+  ssh_known_hosts:
+    description: 'SSH known hosts'
+    required: true
+
+  key_name:
+    description: 'SSH key name'
+    default: 'id_rsa'
+
+  exposed_ssh_folder_path:
+    description: 'SSH exposed folder path'
+    default: '~/.ssh'
+
+runs:
+  using: 'node12'
+  main: 'index.js'
+
