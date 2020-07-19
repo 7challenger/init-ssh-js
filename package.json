@@ -1,6 +1,7 @@
 {
   "name": "initi-ssh-js",
   "version": "1.0.0",
+  "license": "All rights reserved to 7challenger",
   "main": "index.js",
   "dependencies": {
     "@actions/core": "^1.2.4",
